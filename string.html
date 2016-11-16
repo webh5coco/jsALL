@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>string</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+    <script>
+     var str="guoerwe3423iddddddddd";
+
+
+     document.write(str.charAt(4)+"<br/>");/*索引值*/
+
+     document.write(str.indexOf("ddd")+"<br/>");/*打印字母的索引值*/
+
+     document.write(str.lastIndexOf("d")+"<br/>");/*从最后开始往前找*/
+
+     var myExp=str.match(/\d/gi);/*匹配正则表达式的内容，返回一个匹配的数组*/
+     document.write(myExp+"<br/>");
+
+    var str2="how is every things going";
+    var arry2=str2.split(" ");/*将字符串转化为数组，参数为分割的内容。*/
+     document.write(arry2[2]+"<br/>");
+
+    document.write(str2.search(/is/gi)+"<br/>");/*使用search方式查找匹配元素，返回匹配的内容的索引值4*/
+
+    document.write(str2.replace("is","guoguo")+"<br/>");/*放入两个参数，第一个参数是替换的内容，第二个参数是替换的东西，返回替换后的字符串*/
+    var s=str2.slice(0,1);/*截取返回截取的内容*/
+    document.write(s+"<br/>");
+
+    var str3="dsfdsfdsfsdfds";
+    document.write(str3.substr(1,4)+"<br/>");/*从第1位开始向后截取4位，这个是数量*/
+    document.write(str3.substring(1,6)+"<br/>");/*从第1位开始截取到索引值6-1位*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
