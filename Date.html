@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Date</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+
+
+
+    <script>
+    var dat=new Date();
+    document.write(dat+"<br/>");
+    document.write(dat.getFullYear()+"<br/>");/*获取当前年份*/
+    document.write(dat.getMonth()+1+"<br/>");/*获取当前月份,月份需要+1*/
+    document.write(dat.getDate()+"<br/>");/*获取当前日期*/
+    document.write(dat.getDay()+"<br/>");/*获取星期*/
+    document.write(dat.getHours()+"<br/>");/*获取小时数*/
+    document.write(dat.getMinutes()+"<br/>");/*获取分钟数*/
+    document.write(dat.getSeconds()+"<br/>");/*获取秒数*/
+    document.write(dat.getTime()+"<br/>");/*获取毫秒数*/
+    
+
+    var dd=new Date(2100,11,1);
+
+    document.write(dd+"<br/>");
+    document.write(dd.getTime()+"<br/>");
+    document.write(dd.getDay()+"<br/>")
+
+
+
+
+
+    </script>
+</body>
+</html>
