@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>正则表达式</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+<script>
+    
+var str="thisf sdfis ss dfds qwwwwwwwwww";
+document.write(str.match(/s/gi)+"<br/>");/*从字符串中匹配指定的字符,返回一个数组 s,s,s,s,s,s*/
+
+var myE=new RegExp("s","gi");/*g---》全局，i不区分大小写*/
+document.write(myE.test(str)+"<br/>");/*test方法测试是否匹配，返回true或者false*/
+
+/*----------------[]括号范围内--------------*/
+
+var str2="sdfjslkdjf 34jfodfsjo56oddddd dfs";
+document.write(str2.match(/[c-f]/gi)+"<br/>");/*[c-f]匹配c到f之间的所有字母*/
+
+var str3="sd3334gdfgfjj4ksf56";
+var str4="21jdfklfd4fdsfdsfdsf2sf"
+document.write(str3.match(/[1-4]/gi)+"<br/>")/*[1-4]匹配1到4之间的所有字母*/
+document.write(str3.match(/[^1-4]/gi)+"<br/>")/*[^1-4]匹配除了1到4之外的所有字母*/
+document.write(str4.match(/^[1-4]/gi)+"<br/>")/*匹配1到4开头的字符，返回匹配的数组*/
+
+
+var str5="this67was334tai";
+document.write(str5.match(/t./gi)+"<br/>");/*查找单个字符，除了换行和行结束符*/
+document.write(str5.match(/\w\w/gi)+"<br/>");/*匹配字符，以空格符为界限th,wa,ta*/
+document.write(str5.match(/\w+/gi)+"<br/>");/*匹配字符，带个+号表示后面还有内容*/
+document.write(str5.match(/\W/gi)+"<br/>");/*匹配非字符*/
+document.write(str5.match(/\d/gi)+"<br/>");/*匹配数字*/
+
+var str6="hellowworld34this  is cooc's ";
+document.write(str6.match(/\s/gi+"<br/>"));/*匹配空格字符*/
+document.write(str6.match(/\S/gi+"<br/>"));/*匹配费空格字符*/
+
+var number="dsf234dsfd33fg233333333444sfdf1dfdsf1 df2 ggdfeew2";
+document.write(number.match(/\d+/gi)+"<br/>")
+document.write(number.match(/\d{3}/gi)+"<br/>");/*{n}表示至少包含n个*/
+document.write(number.match(/\d$/gi)+"<br/>");/*$符号表示以x为结尾*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>
